@@ -8,15 +8,13 @@
 
 ## 📸 Screenshots
 
-| Home (3D World) | Acidification Section |
-| :---: | :---: |
+|          Home (3D World)          |               Acidification Section               |
+| :-------------------------------: | :-----------------------------------------------: |
 | ![Home](./screenshots/inicio.png) | ![Acidification](./screenshots/acidificacion.png) |
 
-| Contamination Section | Marine Sensitization |
-| :---: | :---: |
+|               Contamination Section               |                Marine Sensitization                |
+| :-----------------------------------------------: | :-------------------------------------------------: |
 | ![Contamination](./screenshots/contaminacion.png) | ![Sensitization](./screenshots/sensibilizacion.png) |
-
-> *Note: To display the images correctly on GitHub, save your screenshots inside a folder named `screenshots` at the root of this repository with the corresponding names (`inicio.png`, `acidificacion.png`, etc.).*
 
 ---
 
@@ -31,6 +29,7 @@
 ## ✍️ My Contribution
 
 Within the development team, my main responsibilities were:
+
 * **Acidification Section:** Built and integrated the interactive 3D scene that demonstrates the impact of $CO_2$ on the ocean.
 * **Quiz Design:** Collaborated on designing the interactive quiz section, including developing the element selection logic.
 * **Backend & Auth Integration:** Configured and integrated **Firebase Authentication** to manage user access and state.
@@ -43,18 +42,22 @@ Within the development team, my main responsibilities were:
 Follow these steps to run the prototype on your local machine:
 
 ### 1. Clone the repository and navigate to the project directory
+
 ```bash
 git clone <YOUR-REPOSITORY-URL>
 cd eConsciencia
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Configure environment variables (Firebase Auth)
+
 Create a `.env` file in the root of the `eConsciencia` folder with your Firebase credentials:
+
 ```env
 VITE_FIREBASE_API_KEY=your_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
@@ -65,7 +68,9 @@ VITE_FIREBASE_APP_ID=your_app_id
 ```
 
 ### 4. Start the local development server
+
 ```bash
 npm run dev
 ```
+
 The application will be available at `http://localhost:5173`.
