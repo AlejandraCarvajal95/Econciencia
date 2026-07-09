@@ -1,78 +1,71 @@
 # 🌍 eConsciencia
 
-**eConsciencia** es una plataforma educativa interactiva diseñada para sensibilizar, educar y evaluar conocimientos sobre los desafíos ambientales más críticos que enfrenta el agua en nuestro planeta. Este proyecto combina experiencias visuales enriquecidas, simulaciones 3D y cuestionarios dinámicos para ofrecer un aprendizaje inmersivo.
+**eConsciencia** is an interactive 3D web prototype designed for environmental education and water conservation awareness. This website serves as an MVP (Minimum Viable Product) developed collaboratively for a university project, focusing primarily on the integration of interactive three-dimensional environments and modern frontend technologies.
+
+🔗 **[Live Demo on Vercel](https://econciencia.vercel.app)**
 
 ---
 
-## 👥 Proyecto Académico y Colaborativo
+## 📸 Screenshots
 
-Este software fue desarrollado como parte del **Proyecto Integrador** escolar en colaboración con compañeros de curso. 
+| Home (3D World) | Acidification Section |
+| :---: | :---: |
+| ![Home](./screenshots/inicio.png) | ![Acidification](./screenshots/acidificacion.png) |
 
-* **Contexto:** Trabajo en equipo para la materia académica correspondiente.
-* **Propósito:** Demostrar habilidades de desarrollo frontend moderno, interactividad en 3D, y manejo de persistencia en la nube mediante un enfoque pedagógico sobre el cuidado del agua.
+| Contamination Section | Marine Sensitization |
+| :---: | :---: |
+| ![Contamination](./screenshots/contaminacion.png) | ![Sensitization](./screenshots/sensibilizacion.png) |
 
----
-
-## 🚀 Características Principales
-
-La plataforma se compone de diversos módulos interactivos:
-
-1. **💧 Escasez de Agua (Water Shortage):** Sección informativa sobre el impacto del estrés hídrico global, sequías y el agotamiento de fuentes de agua potable.
-2. **🗑️ Contaminación del Agua (Water Contamination):** Una simulación interactiva construida en **3D** utilizando físicas avanzadas, donde se recrea un entorno interactivo de bloques para comprender cómo la contaminación afecta los cuerpos de agua.
-3. **🧪 Acidificación del Agua (Water Acidification):** Explicación interactiva sobre los efectos de la disolución de dióxido de carbono ($CO_2$) en mares y océanos y la consecuente caída del pH.
-4. **🧠 Quiz interactivo:** Cuestionario con retroalimentación en tiempo real para poner a prueba los conceptos aprendidos sobre el cuidado del agua.
-5. **🔐 Sistema de Autenticación:** Registro y login de usuarios integrados con **Firebase Auth** para gestionar el progreso.
+> *Note: To display the images correctly on GitHub, save your screenshots inside a folder named `screenshots` at the root of this repository with the corresponding names (`inicio.png`, `acidificacion.png`, etc.).*
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Key Technologies
 
-* **Frontend:** [React](https://react.dev/) + [Vite](https://vitejs.dev/)
-* **Estilos y Componentes:** [Tailwind CSS](https://tailwindcss.com/) & [Shadcn UI](https://ui.shadcn.com/) (Radix UI)
-* **Entorno 3D y Físicas:** 
-  * [Three.js](https://threejs.org/)
-  * [@react-three/fiber](https://r3f.docs.pmnd.rs/) (R3F)
-  * [@react-three/drei](https://github.com/pmndrs/drei)
-  * [@react-three/rapier](https://github.com/pmndrs/react-three-rapier) (Físicas 3D en tiempo real)
-* **Gestión de Estado:** [Zustand](https://github.com/pmndrs/zustand)
-* **Base de Datos y Autenticación:** [Firebase](https://firebase.google.com/) (Firestore & Auth)
+* **3D Design & Interactivity:** Three.js, `@react-three/fiber` (R3F), `@react-three/drei`, and 3D physics with `@react-three/rapier`.
+* **Frontend:** React + Vite, Tailwind CSS, Zustand (state management), and Radix UI.
+* **Authentication:** Firebase Auth.
 
 ---
 
-## 💻 Instrucciones para Ejecución Local
+## ✍️ My Contribution
 
-Para clonar y correr este proyecto en tu computadora, sigue estos pasos:
+Within the development team, my main responsibilities were:
+* **Acidification Section:** Built and integrated the interactive 3D scene that demonstrates the impact of $CO_2$ on the ocean.
+* **Quiz Design:** Collaborated on designing the interactive quiz section, including developing the element selection logic.
+* **Backend & Auth Integration:** Configured and integrated **Firebase Authentication** to manage user access and state.
+* **DevOps & Deployment:** Set up the production pipeline and successfully deployed the application on **Vercel**.
 
-### Prerrequisitos
-Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 18 o superior recomendada).
+---
 
-### 1. Clonar el repositorio
+## 💻 Local Setup
+
+Follow these steps to run the prototype on your local machine:
+
+### 1. Clone the repository and navigate to the project directory
 ```bash
-git clone <URL-DE-TU-REPOSITORIO>
-cd <nombre-de-la-carpeta>
+git clone <YOUR-REPOSITORY-URL>
+cd eConsciencia
 ```
 
-### 2. Instalar dependencias
-Navega a la carpeta de la aplicación e instala los paquetes necesarios:
+### 2. Install dependencies
 ```bash
-cd eConsciencia
 npm install
 ```
 
-### 3. Configurar variables de entorno
-Crea un archivo `.env` en la raíz de la carpeta `eConsciencia` con tus credenciales de Firebase (puedes crear un proyecto de prueba gratis en la consola de Firebase):
+### 3. Configure environment variables (Firebase Auth)
+Create a `.env` file in the root of the `eConsciencia` folder with your Firebase credentials:
 ```env
-VITE_FIREBASE_API_KEY=tu_api_key
-VITE_FIREBASE_AUTH_DOMAIN=tu_auth_domain
-VITE_FIREBASE_PROJECT_ID=tu_project_id
-VITE_FIREBASE_STORAGE_BUCKET=tu_storage_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=tu_messaging_sender_id
-VITE_FIREBASE_APP_ID=tu_app_id
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
 ```
 
-### 4. Ejecutar el servidor de desarrollo
-Inicia la aplicación de manera local:
+### 4. Start the local development server
 ```bash
 npm run dev
 ```
-Abre tu navegador en `http://localhost:5173`.
+The application will be available at `http://localhost:5173`.
