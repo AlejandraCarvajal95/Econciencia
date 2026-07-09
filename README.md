@@ -9,12 +9,12 @@
 ## 📸 Screenshots
 
 |          Home (3D World)          |               Acidification Section               |
-| :-------------------------------: | :-----------------------------------------------: |
-| ![Home](./screenshots/inicio.png) | ![Acidification](./screenshots/acidificacion.png) |
+| :--------------------------------: | :------------------------------------------------: |
+| ![Home](./screenshots/inicio.jpeg) | ![Acidification](./screenshots/acidificacion.jpeg) |
 
-|               Contamination Section               |                Marine Sensitization                |
-| :-----------------------------------------------: | :-------------------------------------------------: |
-| ![Contamination](./screenshots/contaminacion.png) | ![Sensitization](./screenshots/sensibilizacion.png) |
+|               Contamination Section               |                 Marine Sensitization                 |
+| :------------------------------------------------: | :--------------------------------------------------: |
+| ![Contamination](./screenshots/contaminacion.jpeg) | ![Sensitization](./screenshots/sensibilizacion.jpeg) |
 
 ---
 
